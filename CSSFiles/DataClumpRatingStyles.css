@@ -19,3 +19,21 @@
 .rounded-3d:hover {
     transform: translateY(-5px); /* Leichtes Anheben beim Hover */
 }
+
+.button-style {
+    display: inline-flex; /* Flexbox für gleichmäßige Verteilung */
+    align-items: center; /* Vertikale Zentrierung */
+    justify-content: center; /* Horizontale Zentrierung */
+    width: 200px; /* Feste Breite für beide Buttons */
+    height: 50px; /* Feste Höhe für beide Buttons */
+    background-color: #3B82F6; /* Hintergrundfarbe */
+    color: white; /* Textfarbe */
+    font-bold: bold; /* Schriftart */
+    border-radius: 15px; /* Abrundung */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 3D-Effekt */
+    transition: transform 0.3s; /* Sanfte Übergänge */
+}
+
+.button-style:hover {
+    transform: translateY(-5px); /* Leichtes Anheben beim Hover */
+}
