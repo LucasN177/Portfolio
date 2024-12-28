@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lucas Nagelsmann</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css"> <!-- Verlinkung zur CSS-Datei -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gradient-to-r from-[#1E3A8A] to-[#1E1E2F] text-white"> <!-- Dunklerer Hintergrund -->
   <header class="flex items-center justify-center h-screen px-20"> <!-- Mehr Abstand zu den Seiten -->
@@ -21,10 +21,12 @@
 
   <main class="p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     <!-- Projektkarten -->
-    <div class="bg-white text-black p-5 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-      <h2 class="text-xl font-semibold">Data-Clump Bewertung</h2>
-      <p class="mt-2 Blocksatz Silbentrennung">Diese WPF Anwendung bewertet Data-Clumps anhand von ausgewählten Kriterien und ermöglicht es dem Benutzer diese untereinander zu vergleichen. Außerdem wird eine Prioritätenliste für ein Refactoring ausgegeben.</p>
-    </div>
+    <a href="ProjectPages/DataClumpRating.html">
+      <div class="bg-white text-black p-5 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+        <h2 class="text-xl font-semibold">Data-Clump Bewertung</h2>
+        <p class="mt-2 Blocksatz Silbentrennung">Diese WPF Anwendung bewertet Data-Clumps anhand von ausgewählten Kriterien und ermöglicht es dem Benutzer diese untereinander zu vergleichen. Außerdem wird eine Prioritätenliste für ein Refactoring ausgegeben.</p>
+      </div>
+    </a>
     <div class="bg-white text-black p-5 rounded-lg shadow-lg transition-transform transform hover:scale-105">
       <h2 class="text-xl font-semibold">Projekt 2</h2>
       <p class="mt-2">Kurze Beschreibung des Projekts.</p>
@@ -33,13 +35,19 @@
       <h2 class="text-xl font-semibold">Projekt 3</h2>
       <p class="mt-2">Kurze Beschreibung des Projekts.</p>
     </div>
-    <!-- Weitere Projekte können hier hinzugefügt werden -->
+    <!-- Weitere Projekte -->
   </main>
 
-  <footer class="bg-gray-800 text-white text-center p-4 mt-10">
-    <div class="flex justify-center space-x-4 mt-2">
+  <footer class="bg-gray-800 text-white text-center p-4 mt-10 flex justify-between items-center">
+    <div class="flex items-center space-x-4 ml-4">
+      <span>© 2024</span>
+      <span>Lucas Nagelsmann</span>
+  </div>
+    <div class="flex justify-center space-x-4 mt-2 mr-4">
       <a href="https://www.linkedin.com/in/dein-profil" target="_blank" class="hover:underline">LinkedIn</a>
+      <span class="mx-2">|</span>
       <a href="https://www.instagram.com/lucas_n177/" target="_blank" class="hover:underline">Instagram</a>
+      <span class="mx-2">|</span>
       <a href="https://github.com/LucasN177" target="_blank" class="hover:underline">GitHub</a>
     </div>
   </footer>

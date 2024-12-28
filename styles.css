@@ -16,13 +16,13 @@
 }
 
 .fade-in-right {
-  animation: fadeInRight 2s forwards;
+  animation: fadeInRight 2.5s forwards;
   opacity: 0;
   transform: translateX(180px);
 }
 
 .fade-out-left {
-  animation: fadeOutLeft 2s forwards;
+  animation: fadeOutLeft 2.5s forwards;
   opacity: 1;
   transform: translateX(0);
 }

@@ -1,0 +1,21 @@
+/* Abgerundete Bilder mit 3D-Effekt */
+.rounded-3d {
+    border-radius: 15px; /* Leichte Abrundung */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 3D-Effekt */
+    transition: transform 0.3s; /* Sanfte Übergänge */
+}
+
+.rounded-3d:hover {
+    transform: translateY(-5px); /* Leichtes Anheben beim Hover */
+}
+
+/* Abgerundeter Button mit 3D-Effekt */
+.rounded-3d {
+    border-radius: 15px; /* Leichte Abrundung */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 3D-Effekt */
+    transition: transform 0.3s; /* Sanfte Übergänge */
+}
+
+.rounded-3d:hover {
+    transform: translateY(-5px); /* Leichtes Anheben beim Hover */
+}

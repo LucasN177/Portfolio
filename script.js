@@ -22,3 +22,35 @@ function checkScroll() {
     headerText.classList.add('fade-in-right');
   }
 }
+
+function checkDCRScroll() {
+  const features = document.querySelectorAll('.feature'); // Alle Feature-Container auswählen
+
+  features.forEach(feature => {
+      const rect = feature.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+      if (isVisible) {
+          // Wenn das Feature sichtbar ist, Animation hinzufügen
+          if (feature.classList.contains('fade-in-left')) {
+              feature.classList.remove('fade-out-left');
+              feature.classList.add('fade-in-left');
+          } else {
+              feature.classList.remove('fade-out-right');
+              feature.classList.add('fade-in-right');
+          }
+      } else {
+          // Wenn das Feature nicht mehr sichtbar ist, Animation entfernen
+          if (feature.classList.contains('fade-in-left')) {
+              feature.classList.remove('fade-in-left');
+              feature.classList.add('fade-out-left');
+          } else {
+              feature.classList.remove('fade-in-right');
+              feature.classList.add('fade-out-right');
+          }
+      }
+  });
+}
+
+// Event Listener für das Scrollen
+window.addEventListener('scroll', checkScroll);
