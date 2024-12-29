@@ -60,3 +60,18 @@
     transform: translateX(50px);
   }
 }
+
+/* Stil für die Projektkarten */
+.card {
+  transition: transform 0.3s; /* Sanfte Übergänge */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Leichtes Anheben beim Hover */
+}
+
+/* Stil für die Bilder */
+.card img {
+  border-radius: 15px; /* Abrundung der Bilder */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 3D-Effekt */
+}
